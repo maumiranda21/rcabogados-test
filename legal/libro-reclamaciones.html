@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Libro de Reclamaciones | Rojas &amp; Cisneros Abogados</title><meta name="robots" content="noindex,follow">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/styles.css"></head><body>
+<header class="top"><div class="wrap bar"><a class="logo nombre" href="../index.html">Rojas &amp; Cisneros Abogados</a><a class="btn btn-s" href="../index.html">Volver al sitio</a></div></header>
+<main class="wrap doc"><h1 style="font-size:2.6rem">Libro de Reclamaciones</h1>
+<div class="msg bad">Canal pendiente de habilitación: este formulario no registrará reclamos hasta que se configure un servicio de recepción con almacenamiento (ver README). Hasta entonces no es un canal legal habilitado. Basado en la Ley N.º 29571 y su Reglamento; contenido sujeto a revisión del estudio.</div>
+<p>Reclamo: disconformidad con el servicio recibido. Queja: malestar con la atención recibida. Plazo máximo de respuesta: 15 días hábiles improrrogables.</p>
+<form id="form-libro" class="card" novalidate><input type="hidden" name="codigo"><input type="hidden" name="fecha_hora">
+<h2 style="font-size:1.4rem">Proveedor</h2><p>Razón social: [PENDIENTE] · RUC: [PENDIENTE] · Dirección: <span class="dir"></span></p>
+<h2 style="font-size:1.4rem">Consumidor</h2>
+<label for="l1">Nombre completo</label><div><input id="l1" name="nombre" data-r="nombre"><p class="err"></p></div>
+<label for="l2">DNI o documento de identidad</label><div><input id="l2" name="documento" data-r="dni"><p class="err"></p></div>
+<label for="l3">Teléfono</label><div><input id="l3" name="tel" type="tel" data-r="tel"><p class="err"></p></div>
+<label for="l4">Correo electrónico (para recibir copia)</label><div><input id="l4" name="correo" type="email" data-r="correo"><p class="err"></p></div>
+<h2 style="font-size:1.4rem">Servicio</h2>
+<label for="l5">Descripción del servicio</label><div><input id="l5" name="servicio" data-r="serv"><p class="err"></p></div>
+<label for="l6">Monto involucrado (si corresponde)</label><input id="l6" name="monto" inputmode="decimal">
+<h2 style="font-size:1.4rem">Detalle</h2>
+<label for="l7">Tipo de registro</label><div><select id="l7" name="tipo" data-r="tipo"><option value="">Selecciona</option><option>Reclamo</option><option>Queja</option></select><p class="err"></p></div>
+<label for="l8">Descripción de los hechos</label><div><textarea id="l8" name="hechos" rows="5" data-r="hechos"></textarea><p class="err"></p></div>
+<label for="l9">Pedido concreto</label><div><textarea id="l9" name="pedido" rows="3" data-r="pedido"></textarea><p class="err"></p></div>
+<p>Fecha del registro: <strong id="fecha"></strong></p>
+<label class="chk"><input type="checkbox" name="priv" data-r="priv"> <span>Acepto la <a href="privacidad.html">política de privacidad</a>.</span></label><p class="err"></p>
+<p><button class="btn btn-d" type="submit">Registrar</button> <button class="btn btn-s noprint" type="button" id="imprimir" hidden style="color:#10181f;border-color:#10181f">Imprimir o guardar copia</button></p><div id="out-l" class="msg" role="status" aria-live="polite"></div></form></main>
+<div class="cookie" id="cookies" hidden></div><script src="../assets/js/config.js"></script><script src="../assets/js/main.js"></script></body></html>
